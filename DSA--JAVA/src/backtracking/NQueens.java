@@ -2,8 +2,8 @@ package backtracking;
 
 public class NQueens {
     public static void main(String[] args) {
-    int n=4;
-    boolean[][] board =new boolean[n][n];
+        int n=4;
+        boolean[][] board =new boolean[n][n];
         System.out.println(queens(board,0));
     }
 
