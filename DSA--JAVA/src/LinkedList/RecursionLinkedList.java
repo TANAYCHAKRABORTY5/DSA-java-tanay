@@ -4,6 +4,7 @@ public class RecursionLinkedList {
     private Node head;
 
     private int size;
+    private Node tail;
 
     public RecursionLinkedList() {
         this.head = null;
@@ -45,6 +46,27 @@ public class RecursionLinkedList {
     }
 
 
+    //reverse
+
+    public void reverse(){
+        if(head != null){
+            reverse(null,head);
+        }
+    }
+
+    private void reverse(Node prev , Node curr){
+        if(curr.next == null){
+            head= curr;
+            curr.next = prev;
+            return;
+        }
+        Node temp = curr.next;
+        curr.next = prev;
+        reverse(curr,temp);
+    }
+
+
+
 
 
 
@@ -62,6 +84,10 @@ public class RecursionLinkedList {
         list.insertrec(2, 1); // Insert 2 at index 1
         list.insertrec(3, 2); // Insert 3 at index 2
         list.insertrec(88, 2); // Insert 88 at index 2
+
+        list.displayList();
+
+        list.reverse();
 
         list.displayList();
     }
