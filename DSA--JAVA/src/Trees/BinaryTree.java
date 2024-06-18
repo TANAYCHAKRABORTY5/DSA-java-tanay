@@ -49,6 +49,7 @@ public class BinaryTree {
 
     }
 
+    //basic printing functions
     public void display(){
         display(this.root,"");
     }
@@ -63,5 +64,27 @@ public class BinaryTree {
     }
 
 
+    //displaying the tree prettier
 
+    public void prettyDisplay(){
+        prettyDisplay(root,0);
+    }
+
+    private void prettyDisplay(Node node,int level){
+        if(node == null){
+            return;
+        }
+        prettyDisplay(node.right,level +1);
+
+        if(level != 0){
+
+            for(int i=0;i<level-1;i++){
+                System.out.println("|\t\t");
+            }
+            System.out.println("------->" + node.value);
+        }else {
+            System.out.println(node.value);
+        }
+        prettyDisplay(node.left,level +1);
+    }
 }
