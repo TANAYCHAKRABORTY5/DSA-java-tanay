@@ -23,7 +23,11 @@ public class Avl {
 
     }
 
-    public int height(Node node){
+    public int height(){
+        return height(root);
+    }
+
+    private int height(Node node){
         if(node ==null){
             return -1;
         }
@@ -58,20 +62,18 @@ public class Avl {
 
     public Node rotate(Node node){
         if(height(node.left) - height(node.right) > 1){
-            if(height(node.left.left) - height(node.left.right) >0){
+            if(height(node.left.left) - height(node.left.right) >=0){
                 return rightRotate(node);
-            }
-            if(height(node.left.left) - height(node.left.right) >0){
+            }else {
                 node.left = leftRotate(node.left);
                 return rightRotate(node);
             }
         }
 
-        if(height(node.left) - height(node.right) < -1){
-            if(height(node.right.left) - height(node.right.right) <0){
+        if(height(node.right) - height(node.left) >1){
+            if(height(node.right.right) - height(node.right.left) >=0){
                 return leftRotate(node);
-            }
-            if(height(node.right.left) - height(node.right.right) >0){
+            }else {
                 node.right = rightRotate(node.left);
                 return leftRotate(node);
             }
@@ -87,8 +89,8 @@ public class Avl {
         c.right = p;
         p.left =t;
 
-        p.height = Math.max(height(p.left),height(p.right) +1);
-        c.height = Math.max(height(c.left),height(c.right) +1);
+        p.height = Math.max(height(p.left),height(p.right)) +1;
+        c.height = Math.max(height(c.left),height(c.right)) +1;
 
         return c;
     }
@@ -101,8 +103,8 @@ public class Avl {
         p.left =c;
         c.right = t;
 
-        p.height = Math.max(height(p.left),height(p.right) +1);
-        c.height = Math.max(height(c.left),height(c.right) +1);
+        p.height = Math.max(height(p.left),height(p.right)) +1;
+        c.height = Math.max(height(c.left),height(c.right)) +1;
 
         return p;
     }
