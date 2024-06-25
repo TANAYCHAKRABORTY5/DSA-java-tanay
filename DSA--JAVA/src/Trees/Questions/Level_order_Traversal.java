@@ -22,7 +22,7 @@ public class Level_order_Traversal {
               this.val = val;
               this.left = left;
               this.right = right;
-        }
+            }
     }
 
 
