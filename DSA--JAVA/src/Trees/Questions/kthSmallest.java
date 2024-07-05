@@ -4,6 +4,7 @@ import com.sun.source.tree.Tree;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.PriorityQueue;
 
 public class kthSmallest {
 
@@ -25,32 +26,29 @@ public class kthSmallest {
         }
     }
 
-    int count =0;
 
 
-    public int kth(TreeNode root , int k){
-        return helper(root,k).val;
+
+    public int kthSmallest(TreeNode root, int k) {
+        PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+        helper(root,k,minHeap);
+
+        int result = 0;
+        for(int i=0;i<k;i++){
+            result = minHeap.poll();
+        }
+        return result;
     }
 
-    public TreeNode helper(TreeNode node,int k){
+    public void helper(TreeNode node,int k ,PriorityQueue<Integer> minHeap){
         if(node == null){
-            return null;
+            return;
         }
 
 
-        TreeNode left = helper(node.left,k);
-
-        if(left != null){
-            return left;
-        }
-
-        count++;
-
-        if(count ==k){
-            return node;
-        }
-
-        return helper(node.right,k);
+        helper(node.left,k,minHeap);
+        minHeap.offer(node.val);
+        helper(node.right,k,minHeap);
     }
 
 
