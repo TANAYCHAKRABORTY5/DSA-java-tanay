@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class dfsOfGraph {
     public ArrayList<Integer> dfsOfGraph(int v,ArrayList<ArrayList<Integer>> adj){
         boolean vis[] = new boolean[v];
-        ArrayList<Integer> ans = new ArrayList<>();
+        ArrayList<Integer> ans  = new ArrayList<>();
 
         for(int i=0;i<v;i++){
             if(!vis[i]){

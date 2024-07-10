@@ -11,7 +11,7 @@ public class ConnectedComponents {
         adjList = new LinkedList[vertices];
 
         for(int i=0;i<vertices;++i){
-            adjList[i] = new LinkedList<>();
+            adjList[i] = new LinkedList<>(); //creating an empty linked-list for each
         }
     }
 
