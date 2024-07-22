@@ -2,7 +2,7 @@ package Graphs.Questions;
 
 import java.util.ArrayList;
 
-import static Graphs.Questions.AllPath.printAllPaths;
+
 
 public class AllPath {
     static class Edge{
@@ -50,7 +50,7 @@ public class AllPath {
         }
     }
 
-
+    //O(v^v)
     public static void printAllPaths(ArrayList<Edge> graph[], boolean[] vis, int curr, String path, int tar){
         if(curr == tar){
             System.out.println(path);
