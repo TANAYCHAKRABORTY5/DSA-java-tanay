@@ -1,5 +1,8 @@
 package Capgemini_Practise_Questions.matrix;
 
+
+//Check if two matrices are identical.
+
 public class Q3 {
 
     public static boolean areIdentical(int[][] mat1,int[][] mat2){
