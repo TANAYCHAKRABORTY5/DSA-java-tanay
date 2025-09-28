@@ -1,0 +1,29 @@
+All Spanish
+Description
+Your task here is to implement a Java code based on the following specifications. Note that your code should
+match the specifications in a precise manner. Consider default visibility of classes, data fields, and methods
+unless mentioned.
+Specifications I
+class Dish
+data members:
+dishName: String
+Dish(String dishName): contructor with public visibility
+Define getter setters with public visibility
+toString() method has been implemented for you
+class DishTest:
+method definition:
+addYummyToName(List<Dish> list, String s):
+returntype: List<Dish>
+visibility:public
+count(List<Dish> list,String s):
+returnType: Long
+visibility: Public
+
+Task
+class Dish:
+-define the String variable dishName
+-define a constructor and getter setters according to the above specifications
+-toString() method has is implemented for you as a part of the code stub
+1.List<Dish> addYummyToName(List<Dish> list): Add yummy to the dishName (refer to the sample output
+for the format) out it into a list and return the list
+2.Long count(List<Dish> list,String s): return the count of dishes having Strings in name

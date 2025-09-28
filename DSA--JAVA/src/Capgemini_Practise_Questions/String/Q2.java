@@ -1,7 +1,7 @@
 package Capgemini_Practise_Questions.String;
 
 
-//Q2 -> Compress repeated characters. Given a string like aabbbbeeeeffggg, output a2b4e4f2g3
+//Q2.txt -> Compress repeated characters. Given a string like aabbbbeeeeffggg, output a2b4e4f2g3
 
 
 

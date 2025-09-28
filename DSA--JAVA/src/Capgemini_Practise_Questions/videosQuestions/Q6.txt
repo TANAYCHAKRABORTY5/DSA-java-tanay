@@ -1,0 +1,40 @@
+Project Almanac I
+Description
+Your task here is to implement Java code based on the following specifications. Note that your code should match the specifications in a
+precise manner. Consider default visibility of classes, data fields, and methods unless mentioned.
+Specifications
+class definitions:
+class Almanac:
+data member:
+HashMap<String, ArrayList<String>> projects = new Hashmap<>();
+method definition:
+assignProject(String name, String project)
+return type: String
+visibility: public
+currentProjects (String name)
+return type: ArrayList<String>
+visibility: public
+finishProject(String name, String project)
+return type: String
+visibility: public
+
+Task
+class Almanac
+-define the object of HashMap<String, ArrayList<String>> with variable name projects
+The String defines the name of the agent and the ArrayList will have a list of projects he/she is currently working on.
+Implement the below methods for this class:
+-String assignProject(String name, String project):
+• write a code to add agent and project to the hashmap projects
+If the agent name does not exist then create it with a new String list and add the project.
+• Add project into the existing agent project list, if the agent name already exists return "Project assigned
+successfully" after performing the above operations
+-ArrayList<String> currentPojects(String name):
+• Write a code to get the projects list for that particular agent name
+• return null if the given name doesn't exist or doesnot have any projects, else return the String list of all the
+projects.
+-String finishProject(String name, String project):
+• Write a code to finish a project
+• Remove the project that is assigned to the particular agent from his/her list and return "Project finished
+successfully".
+• Return a message "Not found" if the project is not present in the list or list is empty
+
