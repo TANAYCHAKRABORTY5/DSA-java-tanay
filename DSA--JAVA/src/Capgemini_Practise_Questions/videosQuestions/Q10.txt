@@ -1,0 +1,79 @@
+Description:
+
+your task here is to implement a java code based on the following specifications. Note that your code should match the specifications in a precise manner. Consider the default visibility of classes, data fields and methods unless menctioned.
+
+Specifications:
+
+class definitions:
+
+class Person:
+
+method definitions:
+
+data fields:
+
+private name: String variable
+
+private age: int variable
+
+method definitions:
+
+Person(String name, int age): constructor
+
+Getter Methods:
+
+getName()
+
+getAge()
+
+Setter Methods:
+
+setName()
+
+setAge()
+
+class StreamImplementation:
+
+method definitions:
+
+sumAge(List<Person> list)
+
+return type:int
+
+visibility: public
+
+printName(List<Person> list):
+
+returntype: List<String>
+
+visibility: public
+
+printAge(List<Person> list):
+
+return type: List<Integer>
+
+visibility: public
+
+Create a Person class which has the following private members.
+
+name String
+
+age int
+
+1. Define parameterized constructor
+
+2.define getter method for all instance variables
+
+3.Define setter methods for all instance varibales
+
+create a StreamImplementation class which performs operations (as per the given requirements) using StreamApi
+
+- Use appropriate Stream Api methods to get the sum of ages above 50. (java.util.Stream has sum() method when used with filter() gives the required result)
+
+for Ex- list.stream().filter(i->i>5) // Get elements greater than 5
+
+- Crate a method printName(List<Person> list) that returns the name of all the persons. (you can use map() and collect(toList() method)
+
+-Create a method printAge(List<Person> list) that returns the age of all the persons. (you can use map() and collect(toList() method)
+
+Implement using Lambda Expressions
