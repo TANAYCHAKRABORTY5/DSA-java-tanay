@@ -1,0 +1,41 @@
+Hard Work
+Description:
+Your task here is to implement a Java code based on the following specifications. Note that your code should match
+the specifications in a precise manner. Consider default visibility of classes, data fields, and methods unless
+mentioned.
+Specifications
+class definitions: I
+class Employee:
+data members:
+String name
+String projectName
+int workingHrs
+int bonous
+visibility: public
+Employee(String name, String projectName, int working)
+
+method definitons:
+setBonous():
+return type:String
+visibility:public
+checkName():
+return Type: String
+visibility: public
+
+Task
+class Employee
+-define all the variables according to the above specifications
+-define a constructor according to the above specifications, set bonous as o in the constructor
+Implement the below methods for this class
+-String setBonous();
+1.Write a code that validate if the project name is in {"web","tech","hack","SD","PD"} and workingHrs is
+greater than or equal to 30.
+2.If the above condition satisfies then initialize bonus with workingHrs/10 and return a message
+"Congrats".
+3.If the condition is not satisfied then return "Work hard"
+
+-String checkName():
+-write a code that validate if the name is equal to "doselect" then append projectname with workingHrs
+and return the appended string
+-if the name is not equal to "doselect" then append projectName with bonous and return the appended
+string

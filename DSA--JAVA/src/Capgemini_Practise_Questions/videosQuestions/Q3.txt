@@ -1,0 +1,99 @@
+3. Offer on Brands
+
+ription
+
+During the festival of Christmas this year, you have made up your mind to finally buy a car, something you have been saving up for.
+
+Considering other specifications of a car like its horsepower and mileage, you have shortlisted some brands and their models. Now you're stuck with making a decision on which one to buy. Your little brother comes to your aid and suggests that you buy something that has a really good top speed.
+
+Implement a Java code based on the following specifications. Note that your code should match the specifications in a precise manner. Consider default visibility of classes, data fields and methods unless mentioned.
+
+Specifications:
+
+class definitions:
+
+class Model:
+
+data fields:
+
+modelName: String
+
+carSpeed: int
+
+method definitons:
+
+Model (String modelName, int carSpeed): constructor to initialize the class
+
+visibility: public
+
+Define getter setter methods
+
+visibility: public
+
+toString(): has been implemented for you
+
+return type: String
+
+visibility: public
+
+class Implementation:
+
+method definitions:
+
+getModelName(List<Model> list)
+
+return type: List<String>
+
+visibility: public
+
+getModellnfo(List<Model> list, String model, int speed)
+
+return type: Model
+
+visibility: public
+
+Task:
+
+class Model
+
+-define the String variable modelName
+
+-define the int variable carSpeed
+
+-define a constructor
+
+-implement getter setter
+
+-toString() has been implemented for you as part of code stub)
+
+class Implementation
+
+Implement the below methods for this class using StreamApi
+
+-list<String> getModelName (List<Model> list) returns the name of all the models in the list as List<String>
+
+-Model getModelInfo(List<Model> list, String model, int speed) return the model object with the given model name and speed from the list if present, else return null.
+
+Note:- Implement using streams and lambda expressions
+
+Sample input
+
+List<Model> list = new ArrayList<>();
+
+list.add(new Model("SUV", 500));
+
+list.add(new Model("SEDAN", 800));
+
+list //input for modelName()
+
+list, "SUV", 500 //input for getModelinfo()
+
+Sample output
+
+[SUV,SEDAN]
+
+//Output for getModelName()
+
+100%
+
+[Model[model='SUV', speed=500}] //Output for getModelinfo()

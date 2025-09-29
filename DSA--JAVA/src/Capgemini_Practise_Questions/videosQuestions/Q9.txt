@@ -1,0 +1,43 @@
+Description:
+
+Your task here is to implement a Java code based on the following specifications. Note that your code should match the specifications in a precise manner. Consider default visibility of classes, data fields, and methods unless mentioned.
+
+Specifications:
+
+class definitions:
+
+class Source:
+
+method definitions:
+
+change Occurrence (ArrayList<String> a, String m, String n)
+
+return type: ArrayList<String>
+
+visibility:
+
+public
+
+listIndex(ArrayList<String> list):
+
+return type: String
+
+visibility:
+
+public
+
+listAfter(ArrayList<String> a, String m, String n)
+
+return type: ArrayList<String>
+
+visibility: public
+
+Task
+
+Your task is to create a Main class based on the above specifications and implement the following
+
+1. changeOccurrence (ArrayList<String> a, String m, String n): method to change all occurences of m to n in the ArrayList
+
+2. listIndex(ArrayList<String> list): Method to return the element present in list at index o(you can use get() method to get the element present in the list at a given specific index)
+
+3.listAfter(ArrayList<String> a, String m, String n): Method to add string n after the string element m and return the list containing all the elements with n after m

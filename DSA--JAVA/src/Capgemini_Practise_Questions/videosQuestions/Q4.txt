@@ -1,0 +1,42 @@
+4. Harry's Assignment
+Description
+Harry has recently learned about strings in his programming classes. He decided to create some interesting strings using the basic concepts.
+Help Harry!
+Your task here is to implement a JAVA code based on the following specifications. Note that your code should match the specifications in a precise manner.
+Consider default visibility of classes, data fields and methods unless mentioned otherwise. All the methods that you are implementing should be non-static.
+Specification: I
+class definitions:
+class StringPlay:
+data fields:
+int convert
+int max;
+StringPlay(): Define an empty constructor with publi
+class StringMethods:
+convertTolnt(StringPlay sp, String str):
+visibility: public
+return type: int
+getMax (StringPlay sp, String str, char ch):
+visibility: public
+return type: int
+Task:
+
+class StringPlay
+Implement String Play class according to the above specifications
+class String Methods
+- Implement the below methods for this class:
+int convertTolnt(StringPlay sp. String str): Convert the string str to int, return the int value and assign the value to suitable sp
+variable(convert). All the strings will contain only numbers.
+Example: str = "123" then resultant is 123.
+⚫ int getMax(StringPlay sp, String str. char ch). Return the total number of char ch present in string str and assign the value to sp
+variable max and return the same value.
+• Example: str = "This is good", ch='o' then resultant value = 2
+• Example: str = "doselect Et le", ch='e' then resultant value = 3
+Sample Input
+StringMethods sm = new StringMethods();
+StringPlay sp = new StringPlay();
+sm.getMax(sp,"fgfgfgf","g")
+sm.convertTolnt(sp, "123")
+Sample Output
+I
+3
+123

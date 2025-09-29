@@ -1,0 +1,98 @@
+Your task here is to implement java code based on the following specifications.
+
+Note that your code should match the specifications in a precise manner. Consider the default visibility of classes, Data fields and methods unless menctioned.
+
+Specifications
+
+class definitions:
+
+Task
+
+class Salary:
+
+Data member:
+
+HashMap<String, Integer> empList = new HashMap<>();
+
+Method definitions:
+
+totalSalary():
+
+return type: int
+
+visibility: public
+
+getSalary(String designation):
+
+return type: String
+
+visibility: public
+
+updateSalary(String designation, int newSalary): return type: void
+
+visibility: public
+
+
+Task
+
+class Salary:
+
+-define the object of HashMap<String, Integer> variable empList.
+
+-String is for designation.
+
+-Integer is for salary
+
+Implement the below methods for this class:
+
+-int totalSalary();
+
+write a code to find the total salary in the empList.
+
+totalSalary=salary1 + salary2 +.....+ salaryN;
+
+return the totalSalary
+
+Refer the below code for better understanding empList={["CEO", 20000],["Developer]}
+
+-String getSalary(String designation);
+
+Write a code to find out the salary of the given designation
+
+Written a message "No designation Match" if the designation not found, else return the salary in the format "Salary is
+
+XYS".
+
+
+
+Refer the below code for better understanding
+
+empList={["CEO", 20000], ["Developer",5000]} designation= "Developer" return "Salary is 5000".
+
+-void upadateSalary(String designation, int newSalary);
+
+Write a code to set the new Salary.
+
+Find the given designation from empList and update the salary with newSalary.\
+
+empList={["CEO", 20000], ["Developer",5000]}
+
+designation= "Developer" newSalary=6000 then updated empList={["CEO", 20000],["Developer", 6000]}
+
+Sample Input:
+
+Salary obj=new Salary();
+
+obj.empList.put("CEO", 20000);
+
+obj.empList.put("Developer", 5000);
+
+obj.totalSalary();
+
+obj.updateSalary("Developer", 6000);
+
+obj.getSalary("Developer");
+
+Sample Output
+
+25000 //output for totalSalary Salary is 6000 //Output for getSalary

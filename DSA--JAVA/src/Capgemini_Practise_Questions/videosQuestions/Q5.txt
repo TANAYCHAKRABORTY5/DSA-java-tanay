@@ -1,0 +1,45 @@
+5. Repository I
+Description:
+Sarah is learning Exception. She got an assignment to implement custom exception in any language she prefer. She
+chooses Java as her programming language and she needs your help. The below scenario has been given to her:
+• Given a country code, she has to return the country name associated with the country code.
+• If numerical value of country code lies in between 70 and 99 (inclusive), return "India"
+•If the country code is 908 return "US" (This country follows only one code)
+• If the country code is 011 return "Dial somewhere outside of USA" (011 is the international prefix used to dial
+somewhere outside of USA)
+• For all other cases, throw InvalidCodeException with message "No country with the given code found"
+Create a class called Repository, which has a method getCountryName() to meet the above requirements.
+Your task here is to implement a Java code based on the following specifications. Note that your code should match the
+specifications in a precise manner. Consider default visibility of classes, data fields and methods unless mentioned
+otherwise.
+Specifications:
+class definitions:
+class Repository:
+method definitions:
+static getCountryName(String countryCode) throws Invalid CodeException
+return type: String
+class RepositoryImplementation:
+method definitions:
+Static getCountry(String countryCode) throws Invalid CodeException
+return type: String
+visibility: public
+class InvalidCodeException extends Exception:
+method definitions:
+InvalidCodeException(String msg):
+visibility: public
+
+Task:
+Class Repository
+Implement the below method for this class:
+-static String getCountryName(String.countryCode) throws InvalidCodeException:
+Refer the scenario above for the logic.
+Class RepositoryImplementation
+Implement the below method for this class:
+-static String getCountry(String countryCode) throws InvalidCodeException:
+-If length of the country code is greater than 3 or less than 2, throw InvalidCodeException with message "Invalid code
+detail found", Otherwise get the country name for the code from Repository and return the same
+Class InvalidCodeException
+Define custom exception class Invalid CodeException by extending the Exception class.
+• Define a parameterized constructor with a String argument to pass the message to the super class
+
+

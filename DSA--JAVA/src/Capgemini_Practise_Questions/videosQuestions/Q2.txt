@@ -1,0 +1,75 @@
+2. Video Game Player
+
+Description
+
+The RTO has designed a video game for children to bring in awareness regarding road safety. In this game the minimum Vehicle speed should be 30 kms/hr and the maximum speed should be 90
+
+kms/hr.
+
+Help them by writing a Java program to check the functionality of the game software. If the input speed is between 30 and 90 then return the message "Valid" else program should alert with the message "Exception in Speed Validation" by throwing a user defined exception SpeedInvalid Exception.
+
+class definitions:
+
+class CarSpeed:
+
+data field:
+
+speed: String
+
+class CarSpeed Implementation:
+
+method definitions:
+
+setCarSpeed (CarSpeed sp, int spd):
+
+visibility: public
+
+return type: String
+
+class SpeedInvalidException extends Exception:
+
+method definitions:
+
+SpeedInvalidException (String msg): Constru
+
+visibility: public
+
+TASKS:
+
+class CarSpeed
+
+- define the String variable speed
+
+class CarSpeedImplementation
+
+-Implement the below method for this class:
+
+-String setCarSpeed(CarSpeed sp, int spd):
+
+Inside this method, you need to write logic for validating the speed.
+
+If the speed is less than 30 or greater than 90 this method should throw a SpeedInvalidException with message "Exception
+
+in Speed Validation" else assign the string "Valid" to sp.speed
+
+catch the thrown exception and assign the default message to sp.speed
+
+⚫ return sp.speed
+
+class SpeedInvalidException
+
+define custom exception class SpeedInvalid Exception by extending the Exception class
+
+define a parameterized constructor with a String argument to pass the message to the super class.
+
+Sample Input
+
+CarSpeed s =new CarSpeed();
+
+CarSpeedImplementation car=new CarSpeedImplementation();
+
+setCarSpeed(s,25);
+
+Sample Output
+
+Exception in Speed Validation
