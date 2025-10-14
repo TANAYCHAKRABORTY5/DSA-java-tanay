@@ -1,0 +1,21 @@
+DSA with Java
+
+1.Implement binary search on a sorted array.
+
+2.Find the maximum sum subarray (Kadane’s Algorithm).
+
+Given a string, find the longest substring without repeating characters.
+
+Write a program to rotate an array by k positions.
+
+Implement a program to check balanced parentheses using Stack.
+
+Find the leaders in an array (elements greater than all elements to their right).
+
+Write a program to merge two sorted arrays into one sorted array.
+
+Implement queue using two stacks.
+
+Find the intersection of two arrays.
+
+Given a binary tree, print its inorder traversal (recursive and iterative).

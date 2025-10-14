@@ -1,0 +1,146 @@
+Question 1: Bank Account Class
+Problem Statement:
+Design a BankAccount class with the following:
+Fields: accountNumber, accountHolder, balance
+Methods: deposit(double amount), withdraw(double amount), getBalance()
+Constraints:
+Balance should not go negative.
+Use encapsulation principles.
+
+🔸 Question 2: Employee Hierarchy
+Problem Statement:
+Create an abstract class Employee with:
+Fields: name, id
+Abstract method: calculateSalary()
+Then create two subclasses:
+FullTimeEmployee with fixed salary
+PartTimeEmployee with hourly rate and hours worked
+Input:
+Create objects and print salary for each.
+
+🔸 Question 3: Shape Interface
+Problem Statement:
+Create an interface Shape with method double area().
+Implement it in:
+Circle (radius)
+Rectangle (length, breadth)
+Input:
+Take shape type and dimensions, print area.
+
+🔸 Question 4: Library Management System
+Problem Statement:
+Create classes:
+Book with fields: title, author, isbn
+Library with methods: addBook(Book b), removeBook(String isbn), searchBook(String title)
+Use collections to store books.
+
+🔸 Question 5: Polymorphism in Animal Class
+Problem Statement:
+Create a base class Animal with method makeSound().
+Subclasses:
+Dog → "Woof"
+Cat → "Meow"
+Cow → "Moo"
+
+//
+
+Question 1: Interface Implementation – Payment Gateway
+Problem Statement:
+Create an interface PaymentGateway with methods:
+void pay(double amount)
+String getStatus()
+Implement it in:
+CreditCardPayment
+UPIPayment
+Each class should simulate payment and return status.
+
+🔸 Question 2: Abstract Class – Vehicle
+Problem Statement:
+Create an abstract class Vehicle with:
+Fields: make, model
+Abstract method: void startEngine()
+Subclasses:
+Car → prints "Car engine started"
+Bike → prints "Bike engine started"
+Create objects and invoke startEngine().
+
+🔸 Question 3: Inheritance – Student and GraduateStudent
+Problem Statement:
+Create a base class Student with:
+Fields: name, rollNumber
+Method: displayDetails()
+Subclass GraduateStudent adds:
+Field: thesisTitle
+Override displayDetails() to include thesis info.
+
+🔸 Question 4: Interface + Abstract Class – Shape Hierarchy
+Problem Statement:
+Create an interface Drawable with method draw().
+Create an abstract class Shape with:
+Field: color
+Abstract method: double area()
+Subclasses:
+Circle and Rectangle implement both Shape and Drawable.
+Print area and draw output.
+
+🔸 Question 5: Multiple Inheritance via Interface – SmartDevice
+Problem Statement:
+Create two interfaces:
+Connectable → method connect()
+Controllable → method control(String command)
+Create class SmartLight that implements both interfaces.
+Simulate connecting and controlling the device.
+
+
+🔸 Exceptions
+Question 1: Custom Exception – Age Validation
+Problem Statement:
+Create a class Person with a method setAge(int age) that
+throws a custom exception InvalidAgeException if age < 0
+or age > 150.
+Input:
+Age as integer
+Output:
+Valid age or exception message
+
+Question 2: Try-Catch-Finally – Division Program
+Problem Statement:
+Write a program that takes two integers and performs division. Handle:
+ArithmeticException for divide by zero
+InputMismatchException for invalid input
+Ensure finally block prints “Execution Complete”.
+🔸 Collections
+
+Question 3: Frequency Counter using HashMap
+Problem Statement:
+Given a list of integers, count the frequency of each number using HashMap.
+Input:
+[1, 2, 2, 3, 3, 3]
+Output:
+1 → 1, 2 → 2, 3 → 3
+
+Question 4: Sort Students by Marks using TreeMap
+Problem Statement:
+Create a Student class with name and marks. Store students in a
+TreeMap sorted by marks.
+Input:
+List of students
+Output:
+Sorted student list by marks
+
+Question 5: Remove Duplicates using Set
+Problem Statement:
+Given a list of strings, remove duplicates using HashSet.
+Input:
+["apple", "banana", "apple", "orange"]
+Output:
+["apple", "banana", "orange"]
+
+Question 6: Priority Queue – Task Scheduler
+Problem Statement:
+Create a Task class with name and priority.
+Use PriorityQueue to schedule tasks based on priority.
+Input:
+List of tasks
+Output:
+Tasks executed in priority order

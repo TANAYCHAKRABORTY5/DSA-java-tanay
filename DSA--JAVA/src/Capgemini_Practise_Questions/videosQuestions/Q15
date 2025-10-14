@@ -1,0 +1,39 @@
+15. Make it Pangram
+
+
+Description:
+
+Pangram String is a string which contains all the 26 alphabet. Alice is having a string which contains both capital and small alphabets. he needs your help to find the minimum number of alphabet to make that given string to Pangram String. Your task here is to implement a java code based on the following specifications. Note that your code should match the specifications in a precise manner. Consider default visibility of classes, data fields, and methods unless menctioned.
+
+Specifications:
+
+class definition
+
+class Pangram:
+
+minimumAlphabet(String str)
+
+return type: int
+
+visibility: public
+
+Task
+
+class Pangram
+
+-Implement the below methods for this class
+
+int minimumAlphabet(String str):
+
+-Write a code to find minimum number of alphabet
+
+-Both small and upper case alphabet will considered as same
+
+-Return the minimum number of alphabet need to append in the current string to make
+Note:- str will contain both a small case and upper case English alphabet.
+
+Refer to the below example for a clear understanding
+
+str = "acdfghijklmnopqrsTuvxyz"
+
+return 3 (we need to add 'b', 'e', 'w')

@@ -1,0 +1,91 @@
+Description:
+
+Your task here is to implement a java code based on the following specifications. Note that your code should match the specifications in a precise manner. Consider default visibility of classes, data fields and methods unless menctioned.
+
+Specifications
+
+class definitions:
+
+class SalaryData:
+
+Data members:
+
+name: String
+
+daysInMonth: int
+
+salary: double
+
+SalaryData(String name, int daysInMonth, double salary)
+
+class Validator:
+
+calidateSalaryData(SalaryData s) throws Exception
+
+return type: String
+
+visibility:
+
+public
+
+getTotalSalary (SalaryData s)
+
+return type: double
+
+visibility: public
+
+class InvalidDayException:
+
+Method definition:
+
+InvalidDayException(String str)
+
+visibility: public
+
+I
+
+Task
+
+class SalaryData
+
+- define the String variable name
+
+- define the int variable daysInMonth
+
+- define the double variable Salary
+
+define a parameterized constructor for all the data members.
+
+Implement the below methods for this class
+
+- static String validateSalaryData (SalaryData s):
+
+-throw an Invalid DaysException with message "Invalid Days" if daysinMonth is not valid. Here are the valid daysInMonth=[28,30,31].
+
+-throw an InvalidSalary Exception with message "Invalid Salary" if salary is invalid. Salary is considered to be
+
+invalid if it is less then o or greater than 10,00,000
+
+-return "Valid Data" if no above exception found
+
+-static double getTotalSalary (SalaryData s)
+
+-use try-catch to implement this method
+
+-Invoke validateSalaryData() to validate the SalaryData s
+
+-if no exception is thrown by validateSalaryData(), return daysInMonth*Salary
+
+-if exception is thrown by validateSalaryData(), return 0.0
+
+class InvalidDayException
+
+-define custom exception class InvalidDayException by extending the Exception class
+
+-define a perameterized constructor with a string argument to pass the message to the super class
+
+class InvalidSalaryException
+
+-define custom exception class InvalidSalary Exception by extending the Exception class
+
+-define a perameterized constructor with a salary argument to pass the message to the super class

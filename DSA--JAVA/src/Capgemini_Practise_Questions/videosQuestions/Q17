@@ -1,0 +1,45 @@
+Description:
+
+Your task here is to implement a java code based on the following specifications. Note that your code should match the specifications in a precise manner. Consider the default visibility of classes, data fields and methods unless menctioned.
+
+Specifications:
+
+class definitions:
+
+class Source:
+
+method definitions:
+
+sum(ArrayList<Integer> numbers)
+
+return type: int
+
+visibility: public
+
+splitAndReverse(ArrayList<Integer> list)
+
+return type: ArrayList<Integer>
+
+visibility:
+
+public
+
+getItemIndex(ArrayList<Integer> list, int x)
+
+return type: Integer
+
+visibility: public
+
+Task
+
+
+
+class Source
+
+Implement the below methods for this class
+
+- int sum(ArrayList<Integer> numbers): return the sum of the elements in the list
+
+- Integer getItemAtIndex(ArrayList<Integer> list, int index): return the element present in he list at given index, if the index is valid, else return null
+
+- ArrayList<Integer> splitAndReverse(ArrayList<Integer> list): Reverse the two halves of the array list independently and return the resulting list. (if the size of the list is odd while splitting, the first half should have one extra element than the second half. Refer the sample input for clarity).

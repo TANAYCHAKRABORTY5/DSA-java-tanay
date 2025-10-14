@@ -1,0 +1,109 @@
+Description
+
+Your task here is to implement a Java code based on the following specifications. Note that your code should match the specifications in a precise manner. Consider default visibility of classes, data fields, and methods unless mentioned.
+
+Specifications
+
+1
+
+class definitions:
+
+class Person:
+
+data members:
+
+name: String
+
+dateOfBirth:
+
+String
+
+email: String
+
+Person(String name, String dateOfBirth, String email): constructor with public visibility
+
+class Implementation:
+
+method definitions:
+
+validator (Person details) throws Exception
+
+return type: String
+
+visibility: public
+
+submitDetails (Person details)
+
+return type: String
+
+visibility: public
+
+class InvalidDateException:
+
+method definitions:
+
+InvalidDateException(String str)
+
+visibility: public
+
+class InvalidEmailException:
+
+method definitions:
+
+InvalidEmailException(String str)
+
+visibility: public
+
+TASK:
+
+Class Person
+
+Define the String variable name.
+
+- define the String variable dateOfBirth.
+
+- define the String variable email.
+
+-Define a parameterized constructor as specified above.
+
+Class Implementation
+
+Implement the below methods for this class:
+
+1 -String validator(Person details):
+
+Write a code to validate the details of the Person.
+
+Date of birth (dd-mm-yyyy) is present in the given format, throw an InvalidDateException with the message "date year must be less than 2000" if the date year are not less than 2000
+
+⚫ throw an Invalid Email Exception with the message "only @doselect.com domain email are accepted", if the email is not of @doselect.com domain
+
+⚫ return String "valid details", if none of the above exceptions is found
+
+-String submit Details (Person details):
+
+Write a code to submit the details.
+
+Use try-catch to validate the Person details using the validator (Person details) method. If the details are valid then return
+
+" details submitted successfully".
+
+If InvalidDateException or Invalid Email Exception found then return "invalid details" in the catch block.
+
+If any other exception is found then return "other exception" in the catch block.
+
+Class InvalidDateException
+
+define custom exception class
+
+InvalidDateException by extending the Exception class.
+
+define a parameterized constructor with.a String argument to pass the message to the super class.
+
+Class InvalidEmailException
+
+define custom exception class
+
+Invalid Email Exception by extending the Exception class.
+
+define a parameterized constructor with a String argument to pass the message to the super class.

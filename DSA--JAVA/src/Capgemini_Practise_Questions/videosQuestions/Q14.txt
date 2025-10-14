@@ -1,0 +1,124 @@
+14. Merit Scholarship
+
+ption:
+
+case study:
+
+Student scholarship scheme
+
+- By default, all students in a college will be assigned with a scholarship scheme based on the score range of the student. Refer the given table
+
+to find the eligible scholarship scheme specific to a student
+
+Score
+
+>=95 and score<=100
+
+>=90 and score<=95
+
+Scholarship Scheme
+
+Scheme a
+
+Scheme b
+
+no scheme
+
+>=90
+
+Your task here is to implement a java code based on the following specifications. Note that your code should match the specifications in a precise manner. Consider the default visibility of classes, data fields and methods unless menctioned.
+
+Specifications:
+
+class definitions:
+
+class Student: (has been implemented for you as a part of code stub)
+
+data fields:
+
+studentName: String
+
+studentid: Integer
+
+studentScore: int
+
+scholarship Scheme:
+
+String
+
+method definitions:
+
+Parameterized constructor with public visibility
+
+toString():
+
+return type: String
+
+visibility: public
+
+class Scholarshipimpl:
+
+static HashMap<Integer, Student>: hm
+
+Method definitions:
+
+addStudent(Student std):
+
+returntype: void
+
+visibility: public
+
+getStudent Details(String scholarshipScheme):
+
+return type: ArrayList<Student>
+
+visibilibilty:
+
+public
+
+deleteStudent(int id)
+return type: boolean
+
+visibility: public
+
+Task
+
+class Student (has been implemented for you)
+
+-String varibale studentName
+
+-Integer variable studentid
+
+-int varibale studentScore
+
+-String variable scholarship Scheme
+
+-Constructor
+
+-toString() method
+
+On the basis of above case study implement the classes and methods
+
+class Scholarshipimpl
+
+-static HashMap<Integer, Student> hm (has been initialized and pre populated with data for you as a part of code stub. Map contains student id as key and Student object as value)
+
+Implement the below methods for this class
+
+1. public void addStudent(Student std): add the given student object std to the HashMap hm 1. ArrayList<Student> getStudentDetails(String scholarship Scheme): From the HashMap hm filter the Student objects according to the
+
+scholarship Scheme given and return the filtered Student objects as ArrayList<Student>
+
+2. boolean deleteStudent(int id): Delete a Student from HashMap hm for the given id. Return true if the student is deleted wrt the id passed
+
+else false
+
+Note:
+
+Following has been implemented for you
+
+class Student and AddStudent() method in ScholarshipImpl class (Refer to code stub for more clarity)
+
+Don't edit the code stub, else your test cases might fail
+
+

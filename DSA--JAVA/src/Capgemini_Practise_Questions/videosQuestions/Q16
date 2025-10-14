@@ -1,0 +1,86 @@
+Description:
+
+Your task here is to implement a java code based on the following specifications. Note that your code should match the specifications in a precise manner. Consider the default visibility of classes, data fields and methods unless menctioned.
+
+Specifications:
+
+class definitions:
+
+class Candidate:
+
+data members:
+
+String name;
+
+int totalRating
+
+int totalContest
+
+Candidate(String name, int totalRating, int totalContest)
+
+class Validator:
+
+method definitions:
+
+eligible(Candidate details) throws Exception
+
+return type: String
+
+visibility: public
+
+sendInvite(Candidate details) throws Exception
+
+return type: String
+
+visibility: public
+
+class CriteriaMismatch Exception
+
+method definitions:
+
+Criteria MismatchException(String msg)
+
+visibility: public
+
+Task
+
+S
+
+class Candidate
+
+-define the String variable name.
+
+-define the int variable totalRating
+
+-define the int variable totalContest.
+
+-define a constructor according to the above specifications.
+
+class Validator
+
+Implement the below methods for this class
+
+-String eligible(Candidate details):
+
+-Write a code to validate the eligibility criteria of the candidate
+
+-throw a CriteriaMismatch Exception with the message "minimum 1000 total rating is required". if totalRating is less than 1000.
+
+-throw a Criteria Mismatch Exception with the message "minimum 10 contest participation is required", if totalContest is less
+
+than 10.
+
+-if no exception found then return a string message "eligible candiate"
+
+-String sendInvite (Candidate details):
+
+-Write a code to send an invite to the candidate.
+
+-Invoke eligible() method to check the eligibility of candidate, if the eligible() method throws a CriteriaMismatch Exception then
+
+return a message "candidate is not eligible". (Use try catch block)
+
+-if it throws any other exception then return a message " Other exception"
+
+-If no exception found then return a message "Invitation send";
+
